@@ -14,4 +14,21 @@ const outerSection = document.querySelector(".outer-section"),
 
             requestApi(inputField.value);
         }
-    })
+    });
+
+
+    btnLocation.addEventListener("click", () =>{
+
+        if (navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        }
+
+        else{
+            alert("Your browser does not support geolocation api!!!")
+        }
+    });
+
+    function requestApi(city){
+        API = `api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=91c3f2167431be518d3f9b4109376769`;
+        fetchData();
+    }
