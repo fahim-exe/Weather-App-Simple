@@ -32,3 +32,9 @@ const outerSection = document.querySelector(".outer-section"),
         API = `api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=91c3f2167431be518d3f9b4109376769`;
         fetchData();
     }
+
+    function onSuccess(position){
+        const{latitude, longitude} = position.coords;
+        API = `api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon={longitude}&units=metric&appid=91c3f2167431be518d3f9b4109376769`;
+        fetchData();
+    }
