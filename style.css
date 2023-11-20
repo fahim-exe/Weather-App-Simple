@@ -14,7 +14,7 @@
     --deep-clr-4: #164863;
     --deep-clr-5: #427D9D;
     --deep-clr-6: #427D9D;
-    --deep-clr-6: #070c0e;
+    --deep-clr-7: #070c0e;
 
 
 
@@ -133,7 +133,7 @@ header i{
 }
 
 .user-input input::placeholder{
-    color: var(--deep-clr-6);
+    color: var(--deep-clr-7);
 }
 
 .user-input .seperator {
@@ -157,7 +157,7 @@ header i{
 }
 
 .user-input button{
-    color: var(--color-3);
+    color: var(--deep-clr-7);
     background-color: var(--deep-clr-5);
     cursor: pointer;
     transition: 0.3s ease;
