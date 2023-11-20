@@ -38,3 +38,9 @@ const outerSection = document.querySelector(".outer-section"),
         API = `api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon={longitude}&units=metric&appid=91c3f2167431be518d3f9b4109376769`;
         fetchData();
     }
+
+
+    function onError(error){
+        infoText.innerText = error.message;
+        infoText.classList.add("error")
+    }
