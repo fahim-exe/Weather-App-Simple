@@ -9,6 +9,10 @@ const outerSection = document.querySelector(".outer-section"),
 
     let API;
 
+const rndMessages = ["If you get drenced in rain it can cure skin disease....", "Better take umbrella whether it is summer or winter or rain...", "Sun is the free source of Vitamin D !!!!", "When you are hit with storm try to get into the eye.....", "In winter running loses more fat...."];
+
+
+
     inputField.addEventListener("keyup", e => {
         if (e.key == "Enter" && inputField.value !=""){
 
@@ -43,4 +47,8 @@ const outerSection = document.querySelector(".outer-section"),
     function onError(error){
         infoText.innerText = error.message;
         infoText.classList.add("error")
+    }
+
+    function fetchData(){
+        infoText.innerText = "Geting weather updates........"
     }
