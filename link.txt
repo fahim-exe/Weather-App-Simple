@@ -1,0 +1,23 @@
+Font -  Poppins regular 400
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+</style>
+
+
+Icons - Boxicons
+
+https://boxicons.com/usage
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+Weather API Key - fahim-exe
+
+Key: 91c3f2167431be518d3f9b4109376769
+
+API Call-1: `api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=`;
+
+API Call-2: `api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon={longitude}&units=metric&appid=`;
+
+
+degree celcius: °C
+degree farenheit: °F

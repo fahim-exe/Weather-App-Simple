@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Famu Weather</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="outer-section">
+        <header><i class="bx bx-left-arrow-alt"></i>Famu Weather</header>
+
+        
+        <!-- weather input part -->
+        <section class="user-input">
+            <p class="info-txt"></p>
+
+            <div class="content">
+                <input type="text" spellcheck="false" placeholder="City Name" required>
+                <div class="seperator"></div>
+                <button>Get Device Location</button>
+            </div>
+
+        </section>
+
+
+        <!-- main weather result area -->
+        <section class="weather-output">
+            <img src="" alt="weather icon">
+
+            <!-- temperature area -->
+            <div class="temperature">
+                <span class="number">_</span>
+                <span class="degree">°</span>C
+            </div>
+
+            <div class="weather-main">_ _</div>
+
+            <!-- weather Location -->
+            <div class="weather-loaction">
+                <i class="bx bx-map"></i>
+                <span>_, _</span>
+            </div>
+
+            <!-- detailed weather -->
+            <div class="bottom-details">
+
+                <!-- how the weather Feels -->
+                <div class="column temp-feeling">
+
+                    <i class="bx bxs-thermometere"></i>
+                    <div class="details">
+                        <div class="temperature">
+                            <span class="number-2"></span>
+                            <span class="degree">°</span>C
+                        </div>
+                        <p>Feels Like</p>
+                    </div>
+                </div>
+
+
+                <!-- humidity details -->
+                <div class="column humidity">
+                    <i class="bx bxs-droplet-half"></i>
+                    <div class="details">
+                        <span>_</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
